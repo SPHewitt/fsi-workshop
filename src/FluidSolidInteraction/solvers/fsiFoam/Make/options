@@ -1,0 +1,33 @@
+c++WARN     = -Wno-deprecated -Wall -Wextra -Wno-unused-parameter -Wnon-virtual-dtor -Wunused-local-typedefs -Werror -Wredundant-decls -Wcast-align -Wmissing-declarations  -Wswitch-enum -Winvalid-pch -Wredundant-decls -Wformat=2 -Wmissing-format-attribute -Wformat-nonliteral
+
+EXE_INC = -std=c++11 \
+    -I../../fluidSolidInteraction/lnInclude \
+    -I../../ThirdParty/eigen3 \
+    -I$(LIB_SRC)/finiteVolume/lnInclude \
+    -I$(LIB_SRC)/dynamicMesh/dynamicFvMesh/lnInclude \
+    -I$(LIB_SRC)/meshTools/lnInclude \
+    -I$(LIB_SRC)/tetFiniteElement/lnInclude \
+    -I$(LIB_SRC)/surfMesh/lnInclude \
+    -I$(LIB_SRC)/sampling/lnInclude
+
+EXE_LIBS = \
+    ../../fluidSolidInteraction/solidSolvers/paraFEM/fem_routines/objectFiles/parafemutils.o \
+    ../../fluidSolidInteraction/solidSolvers/paraFEM/fem_routines/objectFiles/parafeml.o \
+    ../../fluidSolidInteraction/solidSolvers/paraFEM/fem_routines/objectFiles/parafemnl.o \
+    -L${PARAFEM_HOME}/lib -lParaFEM_mpi.5.0.3 \
+    -L${PARAFEM_HOME}/lib -larpack_linuxdesktop \
+    -lgfortran \
+    -L$(WM_THIRD_PARTY_DIR)/packages/openmpi-1.6.5/platforms/linux64GccDPOpt/lib -lmpi_f90 \
+    -lfiniteVolume \
+    -lincompressibleTurbulenceModel \
+    -lincompressibleRASModels \
+    -lincompressibleLESModels \
+    -lincompressibleTransportModels \
+    -ldynamicFvMesh \
+    -ldynamicMesh \
+    -lmeshTools \
+    -lsurfMesh \
+    -lsampling \
+    -L$(FOAM_USER_LIBBIN) \
+    -lfluidSolidInteraction
+    

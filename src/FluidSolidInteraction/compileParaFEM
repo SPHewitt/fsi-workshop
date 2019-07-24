@@ -1,0 +1,40 @@
+#!/bin/sh
+
+
+# Compile the Fortran Subroutines
+cd fluidSolidInteraction/solidSolvers/paraFEM/fem_routines
+
+# Clean object files
+rm -f *.o
+
+mpif90 -fcheck=all -c parafeml.f90 -o parafeml.o -I${PARAFEM_HOME}/include/mpi
+
+mpif90 -fcheck=all -c parafemnl.f90 -o parafemnl.o -I${PARAFEM_HOME}/include/mpi
+
+mpif90 -fcheck=all -c parafemutils.f90 -o parafemutils.o -I${PARAFEM_HOME}/include/mpi
+
+file="parafeml.o"
+if [ -f "$file" ]
+then
+        echo "Linear Solver Compiled"
+else
+        exit
+fi
+
+file="parafemnl.o"
+if [ -f "$file" ]
+then
+        echo "Non-liner Solver Compiled"
+else
+        exit
+fi
+
+file="parafemutils.o"
+if [ -f "$file" ]
+then
+        echo "Utilities Compiled"
+else
+        exit
+fi
+
+mv *.o objectFiles/.

@@ -1,0 +1,11 @@
+#!/bin/sh
+set -x
+
+./compileParaFEM
+
+wmake libso fluidSolidInteraction
+
+wclean solvers/fsiFoam
+wmake solvers/fsiFoam
+
+wmake libso utilities/functionObjects/pointHistory

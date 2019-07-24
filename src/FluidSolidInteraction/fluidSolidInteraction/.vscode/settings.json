@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "ggiinterpolation.h": "c",
+        "*.tcc": "c",
+        "slist": "c",
+        "ostream": "c",
+        "ggiinterpolationtemplate.h": "c",
+        "primitivepatchtemplate.h": "c",
+        "point2d.h": "c"
+    },
+    "git.ignoreLimitWarning": true
+}

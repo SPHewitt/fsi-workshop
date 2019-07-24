@@ -1,0 +1,11 @@
+
+EXE_INC = -std=c++11 \
+    -I../../ThirdParty/eigen3 \
+    -I$(LIB_SRC)/finiteVolume/lnInclude \
+    -I$(LIB_SRC)/dynamicMesh/dynamicMesh/lnInclude \
+    -I$(LIB_SRC)/meshTools/lnInclude
+
+LIB_LIBS = \
+    -lfiniteVolume \
+    -ldynamicMesh \
+    -lmeshTools

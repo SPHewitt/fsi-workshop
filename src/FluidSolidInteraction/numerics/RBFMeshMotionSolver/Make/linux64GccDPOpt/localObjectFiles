@@ -1,0 +1,11 @@
+LOCAL_OBJECTS = \
+RBFInterpolation.o\
+RBFCoarsening.o\
+RBFMeshMotionSolver.o\
+twoDPointCorrectorRBF.o\
+TPSFunction.o\
+WendlandC0Function.o\
+WendlandC2Function.o\
+WendlandC4Function.o\
+WendlandC6Function.o\
+LinearFunction.o

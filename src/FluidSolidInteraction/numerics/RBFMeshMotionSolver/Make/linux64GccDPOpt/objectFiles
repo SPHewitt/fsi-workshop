@@ -1,0 +1,11 @@
+OBJECTS = \
+$(OBJECTS_DIR)/RBFInterpolation.o\
+$(OBJECTS_DIR)/RBFCoarsening.o\
+$(OBJECTS_DIR)/RBFMeshMotionSolver.o\
+$(OBJECTS_DIR)/twoDPointCorrectorRBF.o\
+$(OBJECTS_DIR)/TPSFunction.o\
+$(OBJECTS_DIR)/WendlandC0Function.o\
+$(OBJECTS_DIR)/WendlandC2Function.o\
+$(OBJECTS_DIR)/WendlandC4Function.o\
+$(OBJECTS_DIR)/WendlandC6Function.o\
+$(OBJECTS_DIR)/LinearFunction.o

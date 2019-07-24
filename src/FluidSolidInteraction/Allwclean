@@ -1,0 +1,11 @@
+#!/bin/sh
+set -x
+
+wclean fluidSolidInteraction
+
+wclean solvers/fsiFoam
+
+wclean utilities/functionObjects/pointHistory
+
+# Wipe out all lnInclude directories and re-link
+wcleanLnIncludeAll
