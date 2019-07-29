@@ -1,0 +1,29 @@
+
+BASIC JOB DATA                                  
+Number of processors used                              1
+Number of nodes that were restrained                 610
+Number of equations solved                          1200
+Number of loaded nodes                               250
+
+PROGRAM SECTION EXECUTION TIMES                    SECONDS  %TOTAL    
+Load the Structure                              0.000000    0.00
+Set Starting conditions                         0.000000    0.00
+
+NEWTON RAPHSON ITERATIONS (2)
+
+PCG ITERATIONS 
+ 336
+ 284
+Gather Displacement Increment                   0.000000    0.00
+Build Stiffness and Mass Matricies              0.152000   73.08
+Set internal Forces                             0.000000    0.00
+Set Newmark and Residual                        0.000000    0.00
+Build the preconditioner                        0.000000    0.00
+Solve equations                                 0.056000   26.92
+Check convergence                               0.000000    0.00
+
+Total Time in N-R loop                          0.208000  100.00
+Update Velocity and Acceleration                0.000000    0.00
+Gather Data to pass out                         0.000000    0.00
+Total execution time                            0.208000  100.00
+
