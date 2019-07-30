@@ -9,3 +9,4 @@ wclean solvers/fsiFoam
 wmake solvers/fsiFoam
 
 wmake libso utilities/functionObjects/pointHistory
+wmake libso utilities/functionObjects/hronTurekReport

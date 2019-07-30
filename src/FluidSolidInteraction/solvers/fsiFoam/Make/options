@@ -17,7 +17,7 @@ EXE_LIBS = \
     -L${PARAFEM_HOME}/lib -lParaFEM_mpi.5.0.3 \
     -L${PARAFEM_HOME}/lib -larpack_linuxdesktop \
     -lgfortran \
-    -L$(WM_THIRD_PARTY_DIR)/packages/openmpi-1.6.5/platforms/linux64GccDPOpt/lib -lmpi_f90 \
+    -L$(WM_THIRD_PARTY_DIR)/packages/openmpi-1.8.8/platforms/linux64GccDPOpt/lib -lmpi_mpifh \
     -lfiniteVolume \
     -lincompressibleTurbulenceModel \
     -lincompressibleRASModels \
