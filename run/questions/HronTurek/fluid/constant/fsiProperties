@@ -25,8 +25,8 @@ relaxationFactor 0.05;
 
 interfaceDeformationLimit 0;
 
-outerCorrTolerance 1e-6;
-nOuterCorr 20;
+outerCorrTolerance 1e-7;
+nOuterCorr 30;
 
 interpolatorUpdateFrequency 0;
 

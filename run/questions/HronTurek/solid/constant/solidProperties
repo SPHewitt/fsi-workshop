@@ -26,8 +26,8 @@ femLargeStrainCoeffs
 
     gravity 0;
 
-    beta 0.4;
-    delta 0.6;
+    beta 0.25;
+    delta 0.5;
 
     PCGTolerance    1e-6;
     PCGLimit        500;

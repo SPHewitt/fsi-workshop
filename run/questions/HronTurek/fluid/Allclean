@@ -13,6 +13,8 @@ cleanCase
 \rm -f *.ps
 \rm -f *.pdf
 \rm -f *.vtk
+\rm fort.90
+\rm Case.run
 
 cd ..
 ./removeSerialLinks fluid

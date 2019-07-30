@@ -18,7 +18,7 @@ fluidSolver icoFluid;
 
 icoFluidCoeffs
 {
-    nCorrectors 3;
+    nCorrectors 5;
     nNonOrthogonalCorrectors 1;
     nOuterCorrectors 1;
 }
