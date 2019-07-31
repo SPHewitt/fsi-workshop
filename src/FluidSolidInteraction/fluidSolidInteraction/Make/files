@@ -126,4 +126,4 @@ solidSolvers/solidModels/constitutiveModel/tractionBoundaryGradient/tractionBoun
 
 fluidSolidInterface/fluidSolidInterface.C
 
-LIB = $(FOAM_USER_LIBBIN)/libfluidSolidInteraction
+LIB = $(FOAM_LIBBIN)/libfluidSolidInteraction

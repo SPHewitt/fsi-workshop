@@ -40,8 +40,16 @@ sudo apt-get install gfortran
 
 ## Fluid-structure interaction library
 ```bash
-mkdir -p $FOAM_RUN
-cd $FOAM_RUN/..
+cd ~
+git clone https://github.com/SPHewitt/fsi-workshop.git
+cd src/FluidSolidInteraction
+./Allwmake
 ```
+
+## Running the case and postprocessing
+To run the case tcsh and python need to be installed.
+
+
+
 
 

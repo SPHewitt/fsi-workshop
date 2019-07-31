@@ -1,4 +1,4 @@
 
 hronTurekReport.C
 
-LIB = $(FOAM_USER_LIBBIN)/libhronTurekReport
+LIB = $(FOAM_LIBBIN)/libhronTurekReport

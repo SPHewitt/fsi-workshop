@@ -28,6 +28,5 @@ EXE_LIBS = \
     -lmeshTools \
     -lsurfMesh \
     -lsampling \
-    -L$(FOAM_USER_LIBBIN) \
     -lfluidSolidInteraction
     
